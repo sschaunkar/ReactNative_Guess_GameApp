@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import {StyleSheet, ImageBackground, SafeAreaView} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import GameScreen from './screens/GameScreen';
-
 import StartGameScreen from './screens/StartGameScreen';
+import { colors } from './constants/Colors';
 
 const App = () => {
   const [pickNumber, setpickNumber] = useState()
@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <LinearGradient
-      colors={['#4e0329', '#ddb52f']}
+      colors={[colors.primary800, colors.yellow100]}
       style={styles.rootContainer}>
       <ImageBackground
         style={styles.rootContainer}
