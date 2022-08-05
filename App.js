@@ -15,7 +15,7 @@ const App = () => {
   let screen = <StartGameScreen getNumber = {getPickedNumber} />
 
   if(pickNumber){
-    screen=<GameScreen />
+    screen=<GameScreen userguess={pickNumber} />
   }
 
   return (
